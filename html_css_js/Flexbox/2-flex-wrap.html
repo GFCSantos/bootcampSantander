@@ -10,15 +10,38 @@
         .flex-conteiner{
             display: flex;
             height: 150px;
-
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: row;
         }
-
         .item{
             font-size: 24px;
-            height: 50px;
+            height: 50%;
             text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrapreverse{
+            flex-wrap: wrap-reverse;
+        }
 
-
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .pink{
+            background-color: pink;
         }
 
     </style>
@@ -27,9 +50,39 @@
 
 <body>
 
+    <h1>NO WRAP</h1>
+
+     <div class="flex-conteiner nowrap">  
+
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item pink">4</div>
+
     
+    </div>
 
+    <h1>WRAP</h1>
 
+    <div class="flex-conteiner wrap">  
+
+       <div class="item blue">1</div>
+       <div class="item orange">2</div>
+       <div class="item green">3</div>
+       <div class="item pink">4</div>
+   
+   </div>
+
+   <h1>WRAP-REVERSE</h1>
+
+   <div class="flex-conteiner wrapreverse">  
+
+      <div class="item blue">1</div>
+      <div class="item orange">2</div>
+      <div class="item green">3</div>
+      <div class="item pink">4</div>
+  
+  </div>
 
 </body>
 </html>
